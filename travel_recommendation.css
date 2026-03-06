@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #a8e6cf;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 6px;
+    gap: 6px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 240px;
+}
+
+button {
+    background-color: #0d9488;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f766e;
+}
+
+.social-bar {
+    position: fixed;
+    left: 25px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: 1000;
+}
+
+.social-bar .line {
+    width: 2px;
+    height: 280px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.social-bar a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-bar a:hover {
+    transform: translateY(-3px);
+    color: #a8e6cf;
+}
+
+#intro {
+    min-height: calc(100vh - 80px);        
+    margin: 0;               
+    padding: 70px;           
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+    padding: 12px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    padding: 10px;
+}
+
+#intro button {
+    width: auto;         
+    display: inline-block;
+    margin: 15px auto;
+    padding: 12px 32px;
+    font-size: 1rem;
+}
+ 
+.aboutUs{
+    color: white;
+    margin: 100px;
+    margin-top: 50px;
+}
+
+.hAboutUs h1{
+    font-size: 50px;
+    margin: 50px;
+    font: black;
+}
+
+.team {
+    margin: 50px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.hTeam {
+    font-size: 30px;
+    padding: 0px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tOverlay {
+    background-color:rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    padding-right: 25px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5px;
+}
+
+.tOverlay button {
+    background-color: rgba(6, 34, 146, 0.764);
+    padding-right: 40px;
+    padding-left: 40px; 
+    border: 0.5px solid rgba(255, 255, 255, 0.627);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tOverlay img {
+    width: 30px;
+    height: 30px;
+}
+
+.contactUs {
+    margin: 250px;
+    margin-top: 180px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.headingCU h1{
+    font-size: 60px;
+}
+
+.contactForm {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.contactForm input{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid rgba(255, 255, 255, 0.627);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 550px;
+    color: white;
+}
+
+.contactForm button {
+    margin-top: 5px;
+    width: 550px;
+    border-radius: 5px;
+}
+
+#recommendations {
+    width: 450px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    height: 87vh;
+    overflow-y: auto;
+}
+
+#recommendations::-webkit-scrollbar {
+    display: none;              
+}
+
+#rec {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#img {
+    width: 450px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#descrip {
+    padding: 20px;
+}
+
+#descrip p {
+    color: rgb(99, 95, 95);
+}
+
+#descrip button {
+    margin-top: 10px;
+    border-radius: 10px;
+}
